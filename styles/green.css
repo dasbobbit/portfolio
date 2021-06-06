@@ -6,6 +6,7 @@
 
 	--mainText:#fff;
 	--secondaryText:#eee;
+    --tertiaryText: #bdc1c4;
 
 	--themeDotBorder:#FFF;
 
@@ -13,4 +14,6 @@
 	--previewShadow:#2a2f25;
 
 	--buttonColor:#669966;
+
+    --socialsColor: #fff;
 }

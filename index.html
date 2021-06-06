@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">    
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
@@ -18,7 +20,8 @@
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Robert Crossley</h1>
+                <h1 style="margin-bottom: 0;">Robert Crossley</h1>
+                <h2>Web Developer</h2>
             </div>
 
             <div class="intro-wrapper">
@@ -29,12 +32,14 @@
                         <div class="browser-dot" id="dot-3"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#my-projects">My Projects</a></li>
+                        <li><a href="#contact-me">Contact</a></li>
                     </ul>
                 </div>
                 <div class="left-column">
                     <img id="profile-pic" src="images/desk.jpg" alt="">
-                    <h5 style="text-align: center; line-height: 0;">Personalise Theme</h5>
+                    <h5 style="text-align: center; line-height: 0; margin-bottom: 25px;">Theme Selector</h5>
                     
                     <div id="theme-options-wrapper">
                         <div data-mode="light" class="theme-dot" id="light-mode"></div>
@@ -43,7 +48,7 @@
                         <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
                     </div>
 
-                    <p id="settings-note">Theme settings will be saved for <br>your next visit</p>
+                    <!-- <p id="settings-note">Theme settings will be saved for <br>your next visit</p> -->
 
                 </div>
                 <div class="right-column">
@@ -52,7 +57,7 @@
                             <div class="corner" id="corner-tl"></div>
                             <div class="corner" id="corner-tr"></div>
                             <h3>What I Do</h3>
-                            <p>I am a Front End Web Developer with a solid understand of JS, React, HTML and CSS. </p>
+                            <p>I'm a Front End Web Developer with a solid understanding of JavaScript, React, HTML and CSS</p>
                             <div class="corner" id="corner-br"></div>
                             <div class="corner" id="corner-bl"></div>
                         </div>
@@ -66,42 +71,37 @@
         <div class="main-container">
             
             <div class="about-wrapper">
-                <div class="about-me">
-                    <h4>More about me</h4>
+                <div class="about-me" id="about-me">
 
-                    <p>Ipsum explicabo excepturi doloribus similique nobis dolorum labore beatae odit neque? Inventore aliquam tempore adipisci velit consequuntur nisi sequi laboriosam facere rem.</p>
-                    <p>Quis doloribus, cum nihil impedit quibusdam repellendus consectetur iste eum esse optio sed debitis ea, asperiores animi ipsum commodi maxime illum. Provident!</p>
-                    
-                    <hr>
-                    
-                    <h4>TOP EXPERTISE</h4>
-                    
-                    <p>Atque eaque accusamus doloremque dolore quam explicabo laborum eos sunt, dolores perferendis obcaecati quibusdam, magnam id inventore? <a target="_blank" href="resume.pdf">Download Resume</a> </p>
-                
+                    <h4>About me</h4>
+                    <p>As a web developer from Manchester, I'm very passionate about anything tech and have found great joy in building applications which essentially improve peoples lives.</p>
+                    <p>Projects I've been building are mostly JavaScript and React based. My long term goal is to become an effective and efficient full stack developer, turning abstract ideas and real-world problems into powerful working products.</p>
+                    <p><a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+                </div>
+
+                <div class="about-me">
+
+
+                    <h4>Skills</h4>
+                    <p>Here's a list of my always-expanding list of skills and familiar technologies.  </p>
+
+
                     <div id="skills">
                         <ul>
                             <li>JavaScript</li>
                             <li>React</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>git</li>
                         </ul>
                         <ul>
                             <li>Node.JS</li>
                             <li>Firebase</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
                             <li>git</li>
+                            <li>npm/yarn</li>
                         </ul>
                         
                     </div>
-
-                </div>
-
-                <div class="social-links">
-                    <p>Ipsum explicabo excepturi doloribus similique nobis dolorum labore beatae odit neque? Inventore aliquam tempore adipisci velit consequuntur nisi sequi laboriosam facere rem.</p>
-                    <p>Quis doloribus, cum nihil impedit quibusdam repellendus consectetur iste eum esse optio sed debitis ea, asperiores animi ipsum commodi maxime illum. Provident!</p>
-
                 </div>
 
             </div>
@@ -109,7 +109,7 @@
     </section>
 
     <section class="s1">
-        <div class="main-container">
+        <div class="main-container" id="my-projects">
             <h3 style="text-align: center;">Some of my projects</h3>
             
             <div class="post-wrapper">
@@ -151,8 +151,9 @@
     <section class="s2">
         <div class="main-container">
             <h3 style="text-align: center;">Get In Touch</h3>
+            <h5 style="text-align: center;"></h5>
 
-            <form id="contact-form">
+            <!-- <form id="contact-form">
                 <label for="">Name</label>
                 <input class="input-field" type="text" name="name">
 
@@ -166,7 +167,16 @@
                 <textarea class="input-field" type="text" name="message"></textarea>
 
                 <input id="submit-btn" type="submit" value="Send">
-            </form>
+            </form> -->
+
+            <div id="contact-me">
+                <p>Email</p>
+                <p style="font-size: 20px;">bcrossley95@gmail.com</p>
+                <div id="contact-socials">
+                    <a href="https://www.linkedin.com/in/robert-crossley/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/dasbobbit" class="fa fa-github"></a>
+                </div>
+            </div>
         </div>
     </section>
 
