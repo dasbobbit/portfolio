@@ -40,6 +40,7 @@ p, li, span, label, input, textarea {
 
 a {
     text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
     color: #17a2b8;
 }
 
@@ -160,8 +161,8 @@ h6 {font-size: 16px;}
     display: block;
     margin: 0 auto;
 
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 280px;
     object-fit: cover;
     border: 2px solid var(--borderColor)
 }
@@ -333,7 +334,8 @@ h6 {font-size: 16px;}
 }
 
 .post-link {
-    margin-left: 20px;
+    text-decoration: none;
+    margin-left: 24px;
 }
 
 #contact-me {
@@ -396,7 +398,48 @@ h6 {font-size: 16px;}
         ;
     }
 
+    #navigation {
+        margin: 0;
+        padding: 12px;
+    }
+    
+    #navigation a {
+        color: var(--mainText);
+        word-spacing: -5px;
+    }
+    
+    #navigation li {
+        display: inline-block;
+    }
+
+    #profile-pic {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-wrapper {
+        gap: 0;
+    }
+
+    #preview-shadow {
+        width: 260px;
+        height: 225px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    #preview {
+        width: 245px;
+    }
+
     .right-column {
         justify-content: center;
+        padding-top: 0;
+        margin-top: -50px;
+    }
+
+    .left-column {
+        padding-bottom: 0px;
+        /* margin-bottom: -50px; */
     }
 }
